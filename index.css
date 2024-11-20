@@ -1,4 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Example of using different font weights */
+.light {
+  font-weight: 300; /* Light */
+}
+
+.regular {
+  font-weight: 400; /* Regular */
+}
+
+.medium {
+  font-weight: 500; /* Medium */
+}
+
+.bold {
+  font-weight: 700; /* Bold */
+}
+
+.extra-bold {
+  font-weight: 800; /* Extra Bold */
+}
 
 * {
   font-family: "Inter";
@@ -28,7 +47,13 @@ button {
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Inter", system-ui, sans-serif;
 }
+
+main {
+  margin-bottom: 96px;
+}
+
 a {
   font-size: 18px;
   color: #243e63;
@@ -72,15 +97,16 @@ section {
 .btn {
   background-color: #6415ff;
   color: aliceblue;
-  padding: 11px 33px;
-  border-radius: 40px;
+  padding: 12px 32px;
+  border-radius: 500px;
   font-size: 14px;
   border: none;
+  font-weight: 700;
   transition: all 300ms ease;
 }
 
 .btn:hover {
-  color: #874efa;
+  color: white;
   background-color: #5419c9;
   opacity: 1;
 }
@@ -157,6 +183,12 @@ nav {
   margin: 0 24px 0 48px;
 }
 
+.light__nav--btn :hover {
+  color: #874efa;
+  background-color: #5419c9;
+  opacity: 1;
+}
+
 /*
 Sign In
 */
@@ -164,13 +196,10 @@ Sign In
 header .row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .light__sign--in {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   padding: 96px 0;
 }
 
@@ -207,21 +236,21 @@ header .row {
   color: rgb(36, 62, 99);
   font-weight: 500;
   transition: border-color 300ms;
-  padding-right: 160px; 
-color: rgb(229, 231, 235);}
+  padding-right: 160px;
+  color: rgb(229, 231, 235);
+}
 
 .sign--input:hover {
   border-color: #b6bcc4;
 }
 
-
 .sign--btn {
   position: absolute;
   right: 0;
-  height: 48px; 
+  height: 48px;
   font-size: 16px;
   border-radius: 500px;
-  margin: 8px ;
+  margin: 8px;
 }
 
 .sign--btn:hover {
@@ -257,8 +286,6 @@ color: rgb(229, 231, 235);}
   height: 256px;
   transform: matrix(1, 0, 0, 1, -163, 0);
 }
-
-
 
 /*
 Services
@@ -338,12 +365,12 @@ Services
 
 .features__blob {
   transform: translateX(96px) translateY(192px) scaleX(1) scaleY(1);
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 16rem;
-    opacity: 0.25;
-    padding: 16px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 16rem;
+  opacity: 0.25;
+  padding: 16px;
 }
 
 /*
@@ -369,10 +396,10 @@ Quality
 
 .quality__title {
   font-size: 16px;
-    color: #6415ff;
-    letter-spacing: 1.6px;
-    font-weight: 700;
-    text-transform: uppercase;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .quality__sub--title {
@@ -388,13 +415,12 @@ Quality
   font-size: 18px;
   font-weight: 500;
   color: #7c8ba1;
-  line-height: 1.625;}
+  line-height: 1.625;
+}
 
 .quality__btn {
   margin: 32px 0 0;
   padding: 12px 32px;
-  font: 14px;
-  width: 141.25px;
 }
 
 .quality__img--container {
@@ -404,7 +430,6 @@ Quality
   margin: 0 56px;
   z-index: 2;
   display: flex;
-  
 }
 
 .quality__img {
@@ -418,16 +443,16 @@ Quality
 
 .quality__grid {
   transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    right: 0px;
-    bottom: -18px;
-    fill: rgb(100, 21, 255);
-    --tw-text-opacity: 1;
-    color: rgba(100, 21, 255, var(--tw-text-opacity));
-    z-index: 0;
-    display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: -18px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
 }
 /*
 Steps
@@ -452,20 +477,18 @@ Steps
 
 .steps__grid {
   position: absolute;
-    opacity: 0.15;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
-    width: 80px;
-    height: 80px;
-    fill: rgba(100, 21, 255);
-    z-index: 1;
+  opacity: 0.15;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  fill: rgba(100, 21, 255);
+  z-index: 1;
 }
 
 .steps__info--container {
-  
   padding: 32px 0 32px 84px;
- 
 }
 
 .steps__title {
@@ -497,7 +520,6 @@ Steps
 }
 
 .steps__info {
- 
   margin: 0 0 0 24px;
   text-align: left;
 }
@@ -723,8 +745,7 @@ Pricing
   border-width: 1px;
   border-radius: 8px;
   position: relative;
-
-  
+  background-color: white;
 }
 
 .prices__top {
@@ -764,6 +785,7 @@ Pricing
   justify-content: center;
   align-items: center;
   padding: 32px;
+  position: relative;
 }
 
 .name {
@@ -787,6 +809,15 @@ Pricing
 .prices__bottom--button {
   width: 210.66px;
   height: 53px;
+  position: relative;
+}
+
+.prices__bottom--button:hover {
+  transform: translateX(2px) translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  overflow: hidden;
 }
 
 .price__blue {
@@ -827,6 +858,11 @@ Pricing
   color: #6415ff;
 }
 
+.btn2:hover {
+  background-color: #f7fafc;
+  color: #6415ff;
+}
+
 .btn3 {
   background: linear-gradient(
     115deg,
@@ -837,13 +873,12 @@ Pricing
 
 .plans__blob {
   z-index: -10;
-    position: absolute;
-    left: -850px;
-    bottom: 0;
-    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
-    height: 256px;
-    width: 256px;
-    opacity: 0.25;
+  position: absolute;
+
+  transform: translateX(-50%) translateY(479px) scaleX(1) scaleY(1);
+  height: 256px;
+  width: 256px;
+  opacity: 0.25;
 }
 
 /*
@@ -967,6 +1002,14 @@ Testimonials
   border-radius: 50%;
   margin: 0 12px;
   transition: all 300ms;
+}
+
+.btn--left:hover {
+  background-color: #e8eaec;
+}
+
+.btn--right:hover {
+  background-color: #e8eaec;
 }
 
 .btn--right {
