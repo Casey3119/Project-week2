@@ -1,22 +1,26 @@
-/* Example of using different font weights */
+ a:-webkit-any-link {
+ text-decoration: none;
+} 
+
+
 .light {
-  font-weight: 300; /* Light */
+  font-weight: 300;
 }
 
 .regular {
-  font-weight: 400; /* Regular */
+  font-weight: 400;
 }
 
 .medium {
-  font-weight: 500; /* Medium */
+  font-weight: 500;
 }
 
 .bold {
-  font-weight: 700; /* Bold */
+  font-weight: 700; 
 }
 
 .extra-bold {
-  font-weight: 800; /* Extra Bold */
+  font-weight: 800;
 }
 
 * {
@@ -167,15 +171,22 @@ nav {
 .light__nav--links {
   margin: 0 2px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .light__nav--link {
-  color: #243e63;
-  font-size: 15px;
-  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 4px;
+  letter-spacing: 0.35px;
+  
+  position: relative;
+  transition: all 300ms;
   margin: 0 24px;
+}
+
+light__nav--link:hover {
+color: #6415ff;
 }
 
 .light__link {
@@ -186,6 +197,19 @@ nav {
   color: #874efa;
   background-color: #5419c9;
   opacity: 1;
+}
+
+.light__nav--link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  color: #6415ff;
+  background: #6415ff;
+  transition: all 300ms;
+  opacity: 1; 
 }
 
 /*
@@ -1208,7 +1232,7 @@ cursor: pointer;
   margin-top: 24px;
 }
 
-.footer__column--link::after {
+.footer__column--link:hover::after {
   content: "";
   position: absolute;
   left: 0px;
@@ -1216,8 +1240,8 @@ cursor: pointer;
   height: 2px;
   width: 100%;
   background: #ffff;
+  opacity: 1;
   transition: all 300ms;
-  opacity: 0;
 }
 
 .footer__divider {
