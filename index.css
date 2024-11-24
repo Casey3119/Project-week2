@@ -141,7 +141,8 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .light__nav--img--container {
@@ -430,6 +431,8 @@ Quality
 .quality__info--container {
   max-width: 576px;
   margin-right: 64px;
+  width: 50%;
+
 }
 
 .quality__title {
@@ -468,6 +471,7 @@ Quality
   margin: 0 56px;
   z-index: 2;
   display: flex;
+  width: 50%;
 }
 
 .quality__img {
@@ -496,6 +500,8 @@ Quality
 Steps
 */
 
+
+
 .steps__container {
   display: flex;
   justify-content: center;
@@ -506,6 +512,7 @@ Steps
 .steps__img--container {
   display: flex;
   position: relative;
+  width: 50%;
 }
 
 .steps__img {
@@ -527,6 +534,7 @@ Steps
 
 .steps__info--container {
   padding: 32px 0 32px 84px;
+  width: 50%;
 }
 
 .steps__title {
@@ -590,22 +598,30 @@ Values
 }
 
 .values__info--container {
-  display: flex;
-  flex-direction: column;
+ 
   padding: 32px 0;
+  width: 50%;
 }
 
 .values__title {
   font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .values__sub--title {
   font-size: 48px;
   margin: 16px 0 0 0;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
 }
 
 .values__para {
   font-size: 18px;
+  font-weight: 500;
+  color: #7c8ba1;
+  line-height: 1.625;
   margin: 32px 0 0;
 }
 
@@ -648,9 +664,10 @@ Values
 }
 
 .affordable__para {
-  font: 16px;
+  font-size: 16px;
   margin: 16px 0 0;
   line-height: 1.625;
+  color: #7c8ba1;
 }
 
 .professionalism {
@@ -680,16 +697,21 @@ Values
 
 .professionalism__para {
   margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #7c8ba1;
 }
+
 
 .feather.feather-briefcase {
   width: 20px;
   height: 20px;
 }
 
+
+
 .values__img {
-  width: 556px;
-  height: 429.43px;
+  width: 50%;
 }
 
 /*
@@ -1400,4 +1422,50 @@ Responsive Code\
     padding: 32px 8px;
     margin: 0 16px;
   }
+
+  .quality__info--container {
+    margin-right: 0px;
+    padding-right: 48px;
+  }
+
+  .quality--row {
+    flex-direction: row;
+  }
+
+  .quality__sub--title {
+    font-size: 36px;
+  }
+
+  .quality__para {
+    font-size: 16px;
+
+  }
+
+  .steps__row {
+    flex-direction: row;
+  }
+  
+  .steps__sub--title {
+    font-size: 36px;
+  }
+  
+    .values__row {
+    flex-direction: row;
+    }
+
+    .values__sub--title {
+      font-size: 36px;
+    }
+
+    .values__para {
+      font-size: 16px;
+    }    
+
+    .affordable__professionalism {
+      flex-direction: column;
+      max-width: 320px;
+    }
+    
+
+
 }
