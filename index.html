@@ -14,6 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
   </head>
 
   <body class="body">
@@ -40,7 +41,7 @@
                 ><button class="btn light__nav--btn">Sign Up</button></a
               >
             </div>
-            <button class="btn__menu" onclick="openMenu">
+            <button class="btn__menu" onclick="openMenu()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -60,6 +61,16 @@
             </button>
           </div>
         </nav>
+
+        <div class="model">
+          <button
+            class="btn__menu btn__menu--close"
+            onclick="closeMenu()"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg></button>
+        </div>
 
         <header>
           <div class="light__sign--in">
@@ -409,27 +420,27 @@
                   <div class="professionalism__emb">
                     <div class="professionalism__emblem">
                       <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-briefcase"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-briefcase"
                       >
                         <rect
-                        x="2"
-                        y="7"
-                        width="20"
-                        height="14"
-                        rx="2"
-                        ry="2"
+                          x="2"
+                          y="7"
+                          width="20"
+                          height="14"
+                          rx="2"
+                          ry="2"
                         ></rect>
                         <path
-                        d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                          d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
                         ></path>
                       </svg>
                     </div>
@@ -445,13 +456,12 @@
               </div>
               <button class="btn affordable--btn">Learn More</button>
             </div>
-            
-              <img
-                class="values__img"
-                src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
-                alt=""
-              />
-          
+
+            <img
+              class="values__img"
+              src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -557,14 +567,13 @@
       </section>
       <section id="testimonials">
         <div class="testimonials__container">
-          <div class="row">
-            <div class="testimonials__img--container">
-              <img
-                class="testimonials__img"
-                src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
-                alt=""
-              />
-            </div>
+          <div class="row testimonial__row">
+            <img
+              class="testimonials__img"
+              src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
+              alt=""
+            />
+
             <div class="testimonials__info--container">
               <h1 class="testimonials__title">
                 <span class="blue">TESTIMONIALS</span>
@@ -590,13 +599,12 @@
                 </h1>
 
                 <p class="testimonials__para2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-                  fugit minus, atque tempora ducimus cupiditate et aspernatur
-                  velit numquam suscipit sapiente autem fuga molestiae quis quos
-                  expedita officiis eligendi aliquid a eum. Ex recusandae aut
-                  quisquam quas, ducimus quidem enim modi consequuntur id
-                  aspernatur neque magnam doloribus adipisci aliquam. Commodi,
-                  assumenda neque. Quis, obcaecati ducimus?
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 </p>
                 <div class="testimonials__customer--info">
                   <div class="customer__info">
@@ -702,7 +710,7 @@
           <div class="footer__column">
             <div class="footer__column--title">PRESS</div>
 
-            <a class="footer__column--link">"Logos" </a>
+            <a class="footer__column--link">Logos </a>
             <a class="footer__column--link">Events</a>
             <a class="footer__column--link">Stories</a>
             <a class="footer__column--link">Office</a>
