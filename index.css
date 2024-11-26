@@ -2,6 +2,10 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
+.modal__links {
+  display: none;
+}
+
 .light {
   font-weight: 300;
 }
@@ -383,6 +387,7 @@ Services
   font-size: 48px;
   color: #243e63;
   margin: 16px;
+  text-align: center;
 }
 
 .services__para {
@@ -446,7 +451,7 @@ Quality
   font-size: 48px;
   font-weight: 900;
   color: rgb(36, 62, 99);
-  line-height: 1.5;
+  line-height: 1.25;
   margin: 16px 0;
   letter-spacing: 0.025em;
 }
@@ -1492,10 +1497,10 @@ Responsive Code\
     text-align: center;
     width: 100%;
     max-width: 512px;
-}
+  }
 
-.model {
-  position: fixed;
+  .modal {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1510,6 +1515,51 @@ Responsive Code\
     opacity: 0;
     transform: translateX(300%);
     transition: all 300ms ease;
+  }
+
+  .openmenu .modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  .btn__menu--close {
+    position: fixed;
+    top: 24px;
+    right: 18px;
+  }
+
+  .modal__links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__link {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+  }
+
+  .modal__link--btn {
+    color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+  }
 }
 
+@media (max-width: 768px) {
+  .services__sub--title {
+  }
 }
