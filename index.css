@@ -277,7 +277,6 @@ header .row {
   font-weight: 500;
   transition: border-color 300ms;
   padding-right: 160px;
-  color: rgb(229, 231, 235);
 }
 
 .sign--input:hover {
