@@ -286,7 +286,7 @@ header .row {
 .sign--btn {
   position: absolute;
   right: 0;
-  height: calc(100% - 16px);
+
   font-size: 16px;
   border-radius: 500px;
   margin: 8px;
