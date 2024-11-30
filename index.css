@@ -263,6 +263,7 @@ header .row {
   height: 48px;
   position: relative;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
 }
@@ -286,7 +287,7 @@ header .row {
 .sign--btn {
   position: absolute;
   right: 0;
-  height: 48px;
+  height: calc(100% - 16px);
   font-size: 16px;
   border-radius: 500px;
   margin: 8px;
@@ -386,7 +387,7 @@ Services
 .services__sub--title {
   font-size: 48px;
   color: #243e63;
-  margin: 16px;
+  margin: 16px 0;
   text-align: center;
 }
 
@@ -396,6 +397,15 @@ Services
   color: #7c8ba1;
   line-height: 1.625;
   max-width: 576px;
+}
+
+.services__para--top {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7c8ba1;
+  line-height: 1.625;
+  max-width: 576px;
+  text-align: center;
 }
 
 .icon__image--container {
@@ -480,10 +490,6 @@ Quality
 
 .quality__img {
   width: 100%;
-  border: solid #dfe2e6;
-  border-width: 1px;
-  border-radius: 1%;
-  transform: translateY(6%);
   z-index: 1;
 }
 
@@ -570,6 +576,7 @@ Steps
 .steps__info {
   margin: 0 0 0 24px;
   text-align: left;
+  max-width: 320px;
 }
 
 .step__info--title {
@@ -796,7 +803,7 @@ Pricing
 .prices__container {
   display: flex;
   flex-direction: column;
-  margin: 64px 32px 0 0;
+  margin: 64px 0px 32px 0px;
   padding: 8px 32px 0;
   border: solid #dcdddf;
   border-width: 1px;
@@ -1350,7 +1357,6 @@ Responsive Code\
 
 @media (max-width: 992px) {
   .row {
-    flex-direction: column;
     align-items: center;
   }
 
@@ -1362,6 +1368,10 @@ Responsive Code\
     display: block;
     background: transparent;
     border: none;
+  }
+
+  header .row {
+    flex-direction: column;
   }
 
   .sign--title {
@@ -1557,9 +1567,265 @@ Responsive Code\
     border-bottom: 2px solid transparent;
     cursor: pointer;
   }
+
+  .start__btns {
+    width: auto;
+    margin-top: 24px;
+  }
+
+  .start__btn {
+    padding: 16px 32px;
+  }
 }
 
+/*Tablets*/
+
 @media (max-width: 768px) {
+  .services__para--top {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .light__services--icons {
+    justify-content: center;
+  }
+
+  .service--icons {
+    width: auto;
+    max-width: 384px;
+  }
+
+  .quality--row {
+    flex-direction: column-reverse;
+  }
+
+  .quality__info--container,
+  .quality__img--container,
+  .steps__img--container,
+  .steps__info--container,
+  .values__info--container,
+  .values__img,
+  .testimonials__img,
+  .testimonials__info--container {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .quality__info--container,
+  .steps__info--container,
+  .values__info--container,
+  .testimonials__info--container {
+    padding: 0;
+    margin-top: 64px;
+    text-align: center;
+  }
+
+  .quality__para,
+  .pricing__title--para {
+    font-size: 14px;
+  }
+
+  .pricing__title--para {
+    width: auto;
+  }
+
+  .steps__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps__to--start {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps__info,
+  .steps__info--para,
+  .steps__title {
+    text-align: center;
+  }
+
+  .steps__info {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+
+  .values__row {
+    flex-direction: column-reverse;
+  }
+
+  .values__para {
+    font-size: 14px;
+  }
+  .affordable__professionalism {
+    margin: 0 auto;
+  }
+
+  .affordable,
+  .professionalism {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .testimonials__info--container {
+    padding-left: 0;
+  }
+
+  .testimonials__para {
+    font-size: 14px;
+  }
+
+  .footer__columns {
+    justify-content: flex-start;
+  }
+
+  .footer__column {
+    width: calc(100% / 3);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__copyright,
+  .footer__socials {
+    margin-top: 32px;
+  }
+}
+
+/* Small Phones */
+
+@media (max-width: 640px) {
+  .light__sign--input {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sign--input {
+    padding: 16px 0;
+    padding-left: 32px;
+    line-height: 1.5;
+  }
+
+  .sign--btn {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    position: static;
+  }
+
+  .sign--info {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  main {
+    margin-bottom: 80px;
+  }
+
+  .light__services--container,
+  .quality__container,
+  .steps__container,
+  .values__container,
+  .pricing__container,
+  .testimonials__container,
+  .starts--container {
+    padding: 80px 0;
+  }
+
+  .services__sub--title,
+  .price {
+    font-size: 36px;
+  }
+
+  .service__icon--container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quality__info--container,
+  .quality__img--container,
+  .steps__img--container,
+  .steps__info--container,
+  .values__info--container,
+  .values__img,
+  .testimonials__img,
+  .testimonials__info--container,
+  .info--img {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .testimonials__sub--title,
+  .pricing__sub--title,
+  .values__sub--title,
+  .steps__sub--title,
+  .quality__sub--title,
   .services__sub--title {
+    font-size: 30px;
+  }
+
+  .testimonials__customer--info {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+  }
+
+  .customer__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer__btns {
+    margin-top: 32px;
+  }
+
+  .start__title {
+    font-size: 24px;
+  }
+
+  .start__btns {
+    flex-direction: column;
+  }
+
+  .start__btn:nth-child(1) {
+    margin: 0;
+  }
+
+  .start__btn:nth-child(2) {
+    margin-top: 16px;
+  }
+
+  .start__btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .footer__columns {
+    justify-content: center;
+  }
+
+  .footer__column {
+    width: auto;
+    padding: 0 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
   }
 }
